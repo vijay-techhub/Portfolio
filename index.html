@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay Sundar — Automation Test Engineer</title>
+  <meta name="description" content="Portfolio of Vijay Sundar — Automation Test Engineer building Python automation frameworks, APIs, and reliable delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated particle background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">VS</span>
+      <span class="logo-dot"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link"><span>01.</span> About</a></li>
+      <li><a href="#experience" class="nav-link"><span>02.</span> Experience</a></li>
+      <li><a href="#skills" class="nav-link"><span>03.</span> Skills</a></li>
+      <li><a href="#achievements" class="nav-link"><span>04.</span> Achievements</a></li>
+      <li><a href="#contact" class="nav-link"><span>05.</span> Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        <span class="name-word">Vijay</span>
+        <span class="name-word gradient-text">Sundar.</span>
+      </h1>
+      <h2 class="hero-role reveal">
+        I build <span id="typed" class="typed"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        Automation Engineer with <strong>2.5+ years</strong> of experience crafting Python-based
+        test automation frameworks and enterprise APIs. I scale reliability across systems,
+        lead small teams, and turn brittle workflows into resilient ones.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#experience" class="btn btn-primary">
+          <span>Explore My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:Vijayten0808@gmail.com" class="btn btn-ghost">
+          <span>Get in Touch</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <div class="stat-num" data-count="19">0</div>
+          <div class="stat-label">Systems Deployed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="80">0</div>
+          <div class="stat-label suffix-percent">Error Reduction</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="20">0</div>
+          <div class="stat-label">Production APIs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="40">0</div>
+          <div class="stat-label suffix-plus">Issues Resolved</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side rails -->
+    <div class="side-rail rail-left">
+      <ul class="socials">
+        <li><a href="https://linkedin.com/in/vijay-s-9a1b63252" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.59 0 4.25 2.36 4.25 5.43v6.32zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+        </a></li>
+        <li><a href="mailto:Vijayten0808@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a></li>
+        <li><a href="tel:+917305010490" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a></li>
+      </ul>
+      <div class="rail-line"></div>
+    </div>
+
+    <div class="side-rail rail-right">
+      <a href="mailto:Vijayten0808@gmail.com" class="rail-email">Vijayten0808@gmail.com</a>
+      <div class="rail-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="reveal">
+          I'm an <span class="hl">Associate Software Developer</span> at
+          <span class="hl">US Technology International Pvt Ltd</span>, where I design
+          automation systems that catch problems before they reach production.
+        </p>
+        <p class="reveal">
+          Over the past 2.5 years, I've built Python-based automation frameworks
+          deployed across <span class="hl">19 systems globally</span>, cutting benchmark
+          validation errors by <span class="hl">80%</span>. I've shipped
+          <span class="hl">20 production CRUD APIs</span> that power dashboards, reports,
+          and automated data workflows for cross-functional teams.
+        </p>
+        <p class="reveal">
+          I also lead a small team, own client relationships, and take pride in
+          delivering under pressure — I was recognized with the
+          <span class="hl">Shining Star Award</span> for crisis resolution and
+          sustained delivery excellence.
+        </p>
+
+        <div class="about-tech reveal">
+          <p class="tech-label">Current tech I love working with:</p>
+          <ul class="tech-grid">
+            <li>▹ Python</li>
+            <li>▹ Selenium</li>
+            <li>▹ Pywinauto</li>
+            <li>▹ C#.NET</li>
+            <li>▹ REST APIs</li>
+            <li>▹ SQL Server</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="avatar-frame">
+          <div class="avatar">
+            <div class="avatar-initials">VS</div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring-2"></div>
+          </div>
+        </div>
+        <div class="floating-tag tag-1">2.5+ yrs</div>
+        <div class="floating-tag tag-2">Python</div>
+        <div class="floating-tag tag-3">Team Lead</div>
+        <div class="floating-tag tag-4">API</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">Where I've Worked</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3 class="timeline-role">
+                Associate Software Developer
+                <span class="at">@</span>
+                <a href="#" class="timeline-company">US Technology International Pvt Ltd</a>
+              </h3>
+              <p class="timeline-date">December 2023 — Present</p>
+            </div>
+            <div class="timeline-badge">Current</div>
+          </div>
+          <ul class="timeline-list">
+            <li>
+              <span class="bullet">▹</span>
+              <span>Built <strong>30 Python automation scripts</strong> using Selenium and Pywinauto,
+              reducing benchmark validation errors by <strong>80%</strong> and scaling
+              deployment across <strong>19 systems globally</strong>.</span>
+            </li>
+            <li>
+              <span class="bullet">▹</span>
+              <span>Developed <strong>20 CRUD APIs</strong> powering dashboards, reporting,
+              and automated data workflows for cross-functional teams.</span>
+            </li>
+            <li>
+              <span class="bullet">▹</span>
+              <span>Led a <strong>2-member team</strong> managing 3 client projects,
+              resolving <strong>40+ production issues</strong>, and ensuring timely delivery.</span>
+            </li>
+            <li>
+              <span class="bullet">▹</span>
+              <span>Enforced code quality through reviews, automation standards, and production support.</span>
+            </li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Python</span><span>Selenium</span><span>Pywinauto</span>
+            <span>C#.NET</span><span>REST APIs</span><span>SQL Server</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <div>
+              <h3 class="timeline-role">
+                Bachelor of Computer Applications
+                <span class="at">@</span>
+                <a href="#" class="timeline-company">Pondicherry University</a>
+              </h3>
+              <p class="timeline-date">Graduated 2023</p>
+            </div>
+            <div class="timeline-badge badge-alt">Education</div>
+          </div>
+          <ul class="timeline-list">
+            <li>
+              <span class="bullet">▹</span>
+              <span>Ranked <strong>1st in General Proficiency</strong> for outstanding academic
+              performance across the Department of Computer Applications.</span>
+            </li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Computer Applications</span><span>Top Rank</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">Skills & Toolbox</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Automation & Testing</h3>
+        <ul>
+          <li>Python</li><li>Selenium</li><li>Pywinauto</li>
+          <li>End-to-End Automation</li><li>Benchmark Validation</li>
+          <li>Regression Testing</li><li>Defect Tracking</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Development</h3>
+        <ul>
+          <li>SQL Server</li><li>C#.NET</li><li>VB.NET</li>
+          <li>CRUD API Development</li><li>REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Artifactory</li><li>Git</li><li>XAMPP</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11H5a2 2 0 0 0-2 2v7h6v-9zM20 3h-4a2 2 0 0 0-2 2v15h6V5a2 2 0 0 0-2-2zM14 7h-4a2 2 0 0 0-2 2v11h6V9a2 2 0 0 0 0-2z"/></svg>
+        </div>
+        <h3>Practices</h3>
+        <ul>
+          <li>Test Framework Design</li><li>Cross-system Deployment</li>
+          <li>Production Issue Resolution</li><li>Task Distribution</li>
+          <li>Client Requirement Management</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal span-2">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Also Exposed To</h3>
+        <div class="pill-cloud">
+          <span class="pill">Java</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Playwright</span>
+          <span class="pill">Shell Scripting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section id="achievements" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">Achievements & Certifications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="ach-grid">
+      <div class="ach-card ach-highlight reveal">
+        <div class="ach-icon">★</div>
+        <div class="ach-year">2024</div>
+        <h3>Shining Star Award</h3>
+        <p>
+          Selected from a team of 18 for crisis resolution under pressure and
+          sustained delivery excellence across 3 concurrent client projects
+          with zero missed deadlines.
+        </p>
+        <span class="ach-org">US Technology International Pvt Ltd</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-year">2023</div>
+        <h3>1st in General Proficiency</h3>
+        <p>
+          Top rank across the Department of Computer Applications for outstanding
+          academic performance.
+        </p>
+        <span class="ach-org">Pondicherry University</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">◆</div>
+        <div class="ach-year">2024</div>
+        <h3>Leadership Skills for the Future</h3>
+        <p>Certification focused on modern leadership frameworks and team management.</p>
+        <span class="ach-org">LinkedIn Learning</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">◆</div>
+        <div class="ach-year">2022</div>
+        <h3>Data Analysis with Python</h3>
+        <p>Professional certification covering data manipulation, analysis, and visualization.</p>
+        <span class="ach-org">IBM via Coursera</span>
+      </div>
+
+      <div class="ach-card reveal">
+        <div class="ach-icon">◆</div>
+        <div class="ach-year">2022</div>
+        <h3>Python Core</h3>
+        <p>Foundational Python programming certification covering language essentials.</p>
+        <span class="ach-org">SoloLearn</span>
+      </div>
+
+      <div class="ach-card ach-langs reveal">
+        <div class="ach-icon">🌐</div>
+        <h3>Languages</h3>
+        <div class="lang-list">
+          <div class="lang"><span>Tamil</span><div class="lang-bar"><i style="width:100%"></i></div></div>
+          <div class="lang"><span>English</span><div class="lang-bar"><i style="width:95%"></i></div></div>
+          <div class="lang"><span>Hindi</span><div class="lang-bar"><i style="width:70%"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="reveal contact-inner">
+      <p class="section-num center">05. What's Next?</p>
+      <h2 class="contact-title">Let's Build Something Reliable.</h2>
+      <p class="contact-desc">
+        Whether you need automation that scales, APIs that just work, or a partner
+        who owns delivery end-to-end — I'd love to hear from you.
+      </p>
+      <a href="mailto:Vijayten0808@gmail.com" class="btn btn-primary btn-lg">
+        <span>Say Hello</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <div class="contact-methods">
+        <a href="mailto:Vijayten0808@gmail.com" class="contact-method">
+          <span class="cm-label">Email</span>
+          <span class="cm-value">Vijayten0808@gmail.com</span>
+        </a>
+        <a href="tel:+917305010490" class="contact-method">
+          <span class="cm-label">Phone</span>
+          <span class="cm-value">+91 73050 10490</span>
+        </a>
+        <a href="https://linkedin.com/in/vijay-s-9a1b63252" target="_blank" rel="noopener" class="contact-method">
+          <span class="cm-label">LinkedIn</span>
+          <span class="cm-value">vijay-s-9a1b63252</span>
+        </a>
+        <div class="contact-method">
+          <span class="cm-label">Location</span>
+          <span class="cm-value">Pondicherry, India</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Designed & Built by <span class="gradient-text">Vijay Sundar</span></p>
+      <p class="footer-sub">© 2026 · Crafted with attention to detail.</p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
