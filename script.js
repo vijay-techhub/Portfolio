@@ -39,7 +39,7 @@ const typedEl = document.getElementById('typed');
 const phrases = [
   'automation that scales.',
   'APIs that just work.',
-  'test frameworks people trust.',
+  'automation frameworks people trust.',
   'reliable delivery.',
 ];
 let pIdx = 0, cIdx = 0, deleting = false;
